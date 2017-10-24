@@ -1,6 +1,6 @@
 package lab1;
 
-public class Paragraf extends Element {
+public class Paragraf  {
     public Paragraf(){
         super();
     }

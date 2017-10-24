@@ -1,15 +1,38 @@
 package lab1;
 
-public class Carte {
-    private String[] autori;
-    private String titlu;
-    private Cuprins cuprins;
-    private Capitol[] capitole;
+import java.util.Vector;
 
-    public Carte(String[] autori, String titlu, Cuprins cuprins, Capitol[] capitole){
-        this.autori = autori;
-        this.titlu = titlu;
-        this.cuprins = cuprins;
-        this.capitole = capitole;
-    }
+import javax.swing.text.AbstractDocument.Content;
+
+
+
+public class Carte { 
+    Vector<Autor> autori;
+	Cuprins cuprins;
+	Vector<Capitol> capitole;
+	String titlu;
+	Carte() { }
+	Carte(Vector<Autor> autori, Vector<Capitol> capitole, String titlu) {
+		this.autori = autori;
+		this.capitole = capitole;
+		this.titlu=titlu;
+	}
+	public Vector<Autor> getAutori() {
+		return autori;
+	}
+	public void setAutori(Vector<Autor> autori) {
+		this.autori = autori;
+	}
+	public Cuprins getCuprins() {
+		return cuprins;
+	}
+	public void setCuprins(Cuprins cuprins) {
+		this.cuprins = cuprins;
+	}
+	public Vector<Capitol> getCapitole() {
+		return capitole;
+	}
+	
+	public void addContent(Element e){
+	}
 }

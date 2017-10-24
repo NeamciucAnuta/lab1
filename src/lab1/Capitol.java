@@ -8,4 +8,19 @@ public class Capitol {
         this.titlu = titlu;
         this.sectiuni = sectiuni;
     }
+    
+    public void setTitlu(String titlu){
+		this.titlu=titlu;
+	}
+	public String getTitlu(){
+		return titlu;
+	}
+	
+	public void setSectiuni(Sectiune [] sectiuni){
+		this.sectiuni = sectiuni;
+	}
+	public Sectiune getNume(){
+		Sectiune sectiuni = null;
+		return sectiuni;
+	}
 }
